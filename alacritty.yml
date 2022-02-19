@@ -1,29 +1,34 @@
-# One Darker
+# Nightfox Alacritty Colors
+# Style: nordfox
+# Upstream: https://github.com/edeneast/nightfox.nvim/raw/main/extra/nordfox/nightfox_alacritty.yml
 colors:
+  # Default colors
   primary:
-    background: "#1f2227"
-    foreground: "#abb2bf"
-
+    background: '0x2e3440'
+    foreground: '0xb9bfca'
+  # Normal colors
   normal:
-    black: "#4C566A"
-    red: "#bf616a"
-    green: "#A3BE8C"
-    yellow: "#D7BA7D"
-    blue: "#5e81ac"
-    magenta: "#B48EAD"
-    cyan: "#88c0d0"
-    white: "#abb2bf"
-
+    black:   '0x3b4252'
+    red:     '0xbf616a'
+    green:   '0xa3be8c'
+    yellow:  '0xebcb8b'
+    blue:    '0x81a1c1'
+    magenta: '0xb48ead'
+    cyan:    '0x88c0d0'
+    white:   '0xe5e9f0'
+  # Bright colors
   bright:
-    black: "#4C566A"
-    red: "#bf616a"
-    green: "#A3BE8C"
-    yellow: "#D7BA7D"
-    blue: "#5e81ac"
-    magenta: "#B48EAD"
-    cyan: "#88c0d0"
-    white: "#abb2bf"
-
+    black:   '0x465780'
+    red:     '0xd06f79'
+    green:   '0xb1d196'
+    yellow:  '0xf0d399'
+    blue:    '0x8cafd2'
+    magenta: '0xc895bf'
+    cyan:    '0x93ccdc'
+    white:   '0xe7ecf4'
+  indexed_colors:
+    - { index: 16, color: '0xc9826b' }
+    - { index: 17, color: '0xbf88bc' }
   cursor:
     text: "#3B4252"
     cursor: "#ECEFF4"
@@ -44,28 +49,27 @@ font:
   italic:
     family: Hack Nerd Font Mono
     style: Italic
-
   size: 13.0
-
   ligatures: true
-
   offset:
     x: 0
     y: 0
   glyph_offset:
     x: 0
     y: 0
+
 window:
   padding:
     x: 2
     y: 2
   history: 10000
-
   dynamic_title: true
-
   semantic_escape_chars: ',│`|:"'' ()[]{}<>'
   save_to_clipboard: true
   live_config_reload: true
+
+background_opacity: 0.95
+
 key_bindings:
   - { key: V, mods: Control|Shift, action: Paste }
   - { key: C, mods: Control|Shift, action: Copy }
